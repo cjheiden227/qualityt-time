@@ -4,9 +4,7 @@ Rails.application.routes.draw do
   mount Monologue::Engine, at: '/blog'
   get '/home', to: 'home#index', as: '/'
   get '/about', to: 'about#index', as: '/about'
-  scope '/hooks', :controller => :hooks do
-    post :video_uploaded
-  end
+
   resources :videos, only: [:index]
   # You can have the root of your site routed with "root"
   root 'home#index'
