@@ -14,7 +14,7 @@ class Video < ActiveRecord::Base
 		channel.videos
 	end
 
-	def get_videos_task
+	def self.get_videos_task
 		channel = Yt::Channel.new id:  'UCNMLkG2FIrhZIVMo70a4TIQ'
 		videos = channel.videos
 		videos.each do |video|
