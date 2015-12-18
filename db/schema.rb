@@ -11,10 +11,23 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151214212823) do
+ActiveRecord::Schema.define(version: 20151217044430) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "episodes", force: :cascade do |t|
+    t.string   "uid"
+    t.string   "title"
+    t.string   "description"
+    t.string   "thumbnail"
+    t.integer  "views"
+    t.string   "link"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+  end
+
+  add_index "episodes", ["uid"], name: "index_episodes_on_uid", using: :btree
 
   create_table "monologue_posts", force: :cascade do |t|
     t.boolean  "published"
@@ -50,18 +63,5 @@ ActiveRecord::Schema.define(version: 20151214212823) do
     t.datetime "created_at"
     t.datetime "updated_at"
   end
-
-  create_table "videos", force: :cascade do |t|
-    t.string   "uid"
-    t.string   "title"
-    t.string   "description"
-    t.string   "thumbnail"
-    t.integer  "views"
-    t.string   "link"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
-  end
-
-  add_index "videos", ["uid"], name: "index_videos_on_uid", using: :btree
 
 end

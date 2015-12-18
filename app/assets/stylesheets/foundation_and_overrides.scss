@@ -111,12 +111,12 @@ $include-html-global-classes: $include-html-classes;
 // $steel       : #666666;
 // $charcoal    : #555555;
 // $tuatara     : #444444;
-// $oil         : #333333;
-// $jet         : #222222;
+$oil         : #333333;
+ $jet         : #222222;
 // $black       : #000000;
 
 // We use these as default colors throughout
-// $primary-color: #008CBA;
+ $primary-color: #C2C76C;
 // $secondary-color: #e7e7e7;
 // $alert-color: #f04124;
 // $success-color: #43AC6A;
@@ -714,11 +714,11 @@ $include-html-global-classes: $include-html-classes;
 
 // We use these to style the icon-bar and items
 // $icon-bar-bg: $oil;
-// $icon-bar-font-color: $white;
-// $icon-bar-font-color-hover: $icon-bar-font-color;
+$icon-bar-font-color: #C2C76C;
+ $icon-bar-font-color-hover: $oil;
 // $icon-bar-font-size: 1rem;
 // $icon-bar-hover-color: $primary-color;
-// $icon-bar-icon-color: $white;
+ $icon-bar-icon-color: #C2C76C;
 // $icon-bar-icon-color-hover: $icon-bar-icon-color;
 // $icon-bar-icon-size: 1.875rem;
 // $icon-bar-image-width: 1.875rem;
