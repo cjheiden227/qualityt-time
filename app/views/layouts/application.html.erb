@@ -13,27 +13,49 @@
   </head>
 
   <body>
-    <div class="row">
-      <div class="text-center small-12 columns">
-          <h1><%=image_tag('logo.svg', width: 350)%></h1>
-             <div class="icon-bar five-up">
-            <%= link_to root_path do %>
-              
-              <img src="" alt="">
-              <label for="">Home</label>
-            <%end%>
-            <%= link_to episodes_path do %>
-              
-              <img src="" alt="">
+  <nav class="top-bar" data-topbar role="navigation">
+    <ul class="title-area">
+      <li class="name"><a id="nav-logo"></a><!-- Leave this empty --></li>
+      <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+
+    </ul>
+     <section class="top-bar-section">
+    <ul id="main-nav" class="icon-bar left">
+      <li>
+        <%= link_to root_path, class: "item" do %>
+          <%=image_tag('home.svg')%>
+          <label for="">Home</label>
+        <%end%>
+      </li>
+      
+      <li>
+            <%= link_to main_app.episodes_path, class: "item" do %>
+              <%=image_tag('camera.svg')%>
               <label for="">Episodes</label>
             <%end%>
-    </div> 
-      </div>
-    </div>
-      
-  
-
+      </li>
+      <li>
+            <%= link_to main_app.monologue_path, class: "item" do %>
+              <%=image_tag('typewriter.svg')%>
+              <label for="">Blog</label>
+            <%end%>
+      </li>
+      <li>
+            <%= link_to main_app.about_path, class: "item" do %>
+              <%=image_tag('about.svg')%>
+              <label for="">About</label>
+            <%end%>
+            </li>
+          
+    </ul>
+    </section>
+    </nav>
+     <div class="row">
+      <div class="text-center small-12 columns">
+        <div class="logo">
+          <h1><%=image_tag('logo.svg', width: 350)%></h1>
+        </div>
+      </div> 
     <%= yield %>
-
   </body>
 </html>

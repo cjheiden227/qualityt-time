@@ -3,6 +3,7 @@
 			<h1>episode Index</h1>
 			<ul>
 				<%@episodes.each do |episode| %>
+					<%=link_to episode.title, episode %>
 					<li><%=episode.uid%> : <%=episode.title %>: <%=episode.description%> : <%=episode.thumbnail%> : <%=episode.views %></li>
 				<% end%>
 			</ul>
