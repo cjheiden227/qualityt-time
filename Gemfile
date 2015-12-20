@@ -23,7 +23,7 @@ gem 'jbuilder', '~> 2.0'
 gem 'monologue', github: 'jipiboily/monologue'
 gem 'foundation-rails'
 gem 'yt', '~> 0.25.5'
-gem 'wiselinks'
+gem 'will_paginate-foundation'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
 

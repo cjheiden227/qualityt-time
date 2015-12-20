@@ -1,6 +1,6 @@
 class EpisodesController < ApplicationController
 	def index
-		@episodes = Episode.all
+		@episodes = Episode.paginate(:page => params[:page]).order("published_at").reverse_order
 	end
 	
 	def show

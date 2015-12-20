@@ -6,5 +6,10 @@
 			<li><a href="#"><%=@episode.title%></a></li>
 		</ul>
 		<h1><%=@episode.title%></h1>
+		<div class="flex-video">
+			<iframe id="ytplayer" type="text/html"
+  			src="<%=@episode.link%>"
+  			frameborder="0"/>
+  		</div>
 	</div>
 </div>

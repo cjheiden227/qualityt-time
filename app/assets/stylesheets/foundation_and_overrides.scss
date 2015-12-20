@@ -840,11 +840,11 @@ $icon-bar-hover-color: darken(rgba(255,255,255, 0.5), 50%);
 // Off Canvas Tab Bar Variables
 // $include-html-off-canvas-classes: $include-html-classes;
 
-// $tabbar-bg: $oil;
-// $tabbar-height: rem-calc(45);
+$tabbar-bg: rgba($primary-color, 0.75);
+$tabbar-height: rem-calc(45);
 // $tabbar-icon-width: $tabbar-height;
 // $tabbar-line-height: $tabbar-height;
-// $tabbar-color: $white;
+$tabbar-color: $jet;
 // $tabbar-middle-padding: 0 rem-calc(10);
 
 // Off Canvas Divider Styles
@@ -860,7 +860,7 @@ $icon-bar-hover-color: darken(rgba(255,255,255, 0.5), 50%);
 
 // Off Canvas Menu Variables
 $off-canvas-width: rem-calc(112);
-// $off-canvas-bg: $oil;
+ $off-canvas-bg: rgba($primary-color, 0.75);
 // $off-canvas-bg-hover: scale-color($tabbar-bg, $lightness: -30%);
 // $off-canvas-bg-active: scale-color($tabbar-bg, $lightness: -30%);
 
@@ -885,7 +885,7 @@ $off-canvas-width: rem-calc(112);
 // $off-canvas-back-hover-border-bottom: none;
 
 // Off Canvas Menu Icon Variables
-$tabbar-menu-icon-color: $primary-color;
+$tabbar-menu-icon-color: $jet;
 // $tabbar-menu-icon-hover: scale-color($tabbar-menu-icon-color, $lightness: -30%);
 
 // $tabbar-menu-icon-text-indent: rem-calc(35);
