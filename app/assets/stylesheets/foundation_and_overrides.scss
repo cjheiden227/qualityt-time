@@ -715,7 +715,7 @@ $crumb-slash-position: -1px;
 // - - - - - - - - - - - - - - - - - - - - - - - - -
 
 // We use these to style the icon-bar and items
-$icon-bar-bg: transparent;
+$icon-bar-bg: rgba($primary-color, 0.75);
 $icon-bar-font-color: $jet;
  $icon-bar-font-color-hover: $jet;
 // $icon-bar-font-size: 1rem;
