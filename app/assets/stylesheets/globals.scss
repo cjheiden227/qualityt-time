@@ -2,6 +2,7 @@ body{
 	background-image:linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,.75) 50%, rgba(255,255,255,0) 100%), image-url("paper.png");
 	background-size: contain;
 	background-position: center center;
+	background-attachment: scroll, fixed;
 	min-height: 100vh;
 	height: auto;
 	
@@ -11,9 +12,21 @@ body{
 	margin: 20px;
 }
 
+.icon-bar>.item:hover, .mobile-nav>li>a:hover{
+		text-decoration: underline;	
+}
 .icon-bar{
 	box-shadow: 1px 1px 2px 1px #222;
-	.item:hover{
-		text-decoration: underline;	
+	
+}
+nav a{
+	transition: 200ms all ease-in-out;
+}
+.mobile-nav>li{
+	a{
+		label{
+			font-size: .95rem;
+			padding-top: .5rem;
+		}
 	}
 }
