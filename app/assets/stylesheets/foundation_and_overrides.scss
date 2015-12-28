@@ -715,7 +715,7 @@ $crumb-slash-position: -1px;
 // - - - - - - - - - - - - - - - - - - - - - - - - -
 
 // We use these to style the icon-bar and items
-$icon-bar-bg: rgba($primary-color, 0.75);
+$icon-bar-bg: transparent;
 $icon-bar-font-color: $jet;
  $icon-bar-font-color-hover: $jet;
 // $icon-bar-font-size: 1rem;
@@ -1405,8 +1405,8 @@ $tabbar-menu-icon-color: $jet;
 // $include-html-top-bar-classes: $include-html-classes;
 
 // Background color for the top bar
-$topbar-bg-color: rgba($primary-color, 0.75);
-// $topbar-bg: $topbar-bg-color;
+$topbar-bg-color: rgba($primary-color, 0.90);
+$topbar-bg: $topbar-bg-color;
 
 // Height and margin
 $topbar-height: rem-calc(90);
@@ -1427,7 +1427,7 @@ $topbar-link-color-active: $jet;
 $topbar-link-bg: rgba($primary-color, 0.75);
 $topbar-link-bg-hover: darken(rgba(255,255,255, 0.5), 50%);
 // $topbar-link-bg-color-hover: $charcoal;
-// $topbar-link-bg-active: $primary-color;
+$topbar-link-bg-active: $primary-color;
  $topbar-link-bg-active-hover: darken(rgba(255,255,255, 0.5), 50%);
 // $topbar-link-font-family: $body-font-family;
 // $topbar-link-text-transform: none;
@@ -1465,7 +1465,7 @@ $topbar-menu-icon-color-toggled: $charcoal;
 // $topbar-menu-icon-position: $opposite-direction; // Change to $default-float for a left menu icon
 
 // Transitions and breakpoint styles
-$topbar-transition-speed: 300ms;
+$topbar-transition-speed: 200ms;
 // Using rem-calc for the below breakpoint causes issues with top bar
  //$topbar-breakpoint: 9999px;// Change to 9999px for always mobile layout
 // $topbar-media-query: "#{$screen} and (min-width:#{lower-bound($topbar-breakpoint)})";

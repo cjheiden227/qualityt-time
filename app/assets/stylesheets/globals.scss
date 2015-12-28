@@ -1,3 +1,4 @@
+@import "foundation_and_overrides";
 body{
 	background-image:linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,.75) 50%, rgba(255,255,255,0) 100%), image-url("paper.png");
 	background-size: contain;
@@ -12,13 +13,19 @@ body{
 	margin: 20px;
 }
 
+.top-bar, .icon-bar-nav{
+	box-shadow: 1px 1px 2px 1px #222;
+}
+.icon-bar-nav{
+	height: rem-calc(95);
+	width: 100%;
+	background-color: rgba($primary-color, 0.90);
+	
+}
 .icon-bar>.item:hover, .mobile-nav>li>a:hover{
 		text-decoration: underline;	
 }
-.icon-bar{
-	box-shadow: 1px 1px 2px 1px #222;
-	
-}
+
 nav a{
 	transition: 200ms all ease-in-out;
 }
