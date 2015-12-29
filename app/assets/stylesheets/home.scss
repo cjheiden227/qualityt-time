@@ -1,3 +1,16 @@
 // Place all the styles related to the home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+@import "foundation_and_overrides";
+.dark{
+	padding: 4rem 0;
+	background-color: $primary-color;
+	background-image: image-url('gears.svg');
+	background-size: cover;
+	box-shadow: 0px 0.5px 2px 1px $jet, 0px -0.5px 2px 1px $jet;
+	h1, h2, h3, h4, h5, h6{
+		color: white !important;
+	}
+	color: white;
+
+}

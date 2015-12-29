@@ -1,34 +1,60 @@
 @import "foundation_and_overrides";
-body{
-	background-image:linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,.75) 50%, rgba(255,255,255,0) 100%), image-url("paper.png");
-	background-size: contain;
-	background-position: center center;
-	background-attachment: scroll, fixed;
-	min-height: 100vh;
-	height: auto;
+
+.margin-top{
+	margin: 2rem 0;
+}
+
+.text-shadow{
+	text-shadow:2px 2px 2px $jet;
+}
+
+.flex-video{
+	box-shadow: 1px 1px 2px 1px $jet;
+}
+
+.full-width{
+	width: 100%;
+}
+
+.banner{
+	background-color: #CFD0B0;
+}
+
+header{
 	
+	position: relative;
+	&::after{
+		content: '';
+		position: absolute;
+		width: 125%;
+		border: 1px solid white;
+	}
 }
 
 .logo{
-	margin: 20px;
+	margin: 40px 0 0;
 }
 
 .top-bar, .icon-bar-nav{
 	box-shadow: 1px 1px 2px 1px #222;
 }
+
 .icon-bar-nav{
 	height: rem-calc(95);
 	width: 100%;
 	background-color: rgba($primary-color, 0.90);
+	margin: 40px 0;
 	
 }
+
 .icon-bar>.item:hover, .mobile-nav>li>a:hover{
-		text-decoration: underline;	
+	text-decoration: underline;	
 }
 
 nav a{
 	transition: 200ms all ease-in-out;
 }
+
 .mobile-nav>li{
 	a{
 		label{
@@ -36,4 +62,15 @@ nav a{
 			padding-top: .5rem;
 		}
 	}
+}
+
+.frame{
+	width: 100%;
+	// border-radius: 50%;
+	border: 20px solid $primary-color;
+	box-shadow:  1px 1px 5px 0px rgba(0,0,0,0.75);
+}
+
+.button{
+	box-shadow: 1px 1px 2px 1px $jet;
 }
