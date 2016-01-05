@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
   mount Monologue::Engine, at: '/blog'
-  get '/about', to: 'about#index', as: '/about'
+  get '/castcrew', to: 'about#index', as: '/castcrew'
  
   resources :episodes, only: [:index, :show]
 

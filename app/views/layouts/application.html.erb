@@ -43,9 +43,9 @@
               <%end%>
             </li>
             <li>
-              <%=link_to main_app.about_path do %>
+              <%=link_to main_app.castcrew_path do %>
                 <%=image_tag "about.svg", width: 50 %>
-                <label>About</label>
+                <label>Cast & Crew</label>
               <%end%>
             </li>            
           </ul>
@@ -75,15 +75,15 @@
                 <%=image_tag "typewriter.svg"%>
                 <label>Blog</label>
               <%end%>
-              <%=link_to main_app.about_path, class: "item" do %>
+              <%=link_to main_app.castcrew_path, class: "item" do %>
                 <%=image_tag "about.svg"%>
-                <label>About</label>
+                <label>Cast & Crew</label>
               <%end%>
             </div>
           </div>
         </div>
       </nav>
-    <%= yield %>
-    
+
+      <%= yield %>
   </body>
 </html>

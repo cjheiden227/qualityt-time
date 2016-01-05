@@ -21,7 +21,9 @@ gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.0'
 gem 'monologue', github: 'jipiboily/monologue'
+gem 'carrierwave'
 gem 'foundation-rails'
+gem "jquery-slick-rails"
 gem 'yt', '~> 0.25.5'
 gem 'will_paginate-foundation'
 # bundle exec rake doc:rails generates the API under doc/api.

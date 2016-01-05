@@ -4,16 +4,19 @@
 			<div class="pagination-centered">
   				<%= will_paginate @episodes, renderer: FoundationPagination::Rails %> 
   			</div>
-			<ul class="medium-block-grid-3">
-	
-				<%@episodes.each do |episode| %>
-					<li><%=link_to episode do %>
-						<%=image_tag(episode.thumbnail)%>
-					<%end%>
-					</li>
-				<% end%> 
-			</ul>
 			
+  			<div class=" row">
+				<div class="margin-top small-12 columns">
+					<div class="small-uncollapse medium-collapse row">
+						<%@episodes.each do |episode| %>
+							<%=link_to episode, class: "text-center small-12 medium-4 columns frame" do %>
+								<%=image_tag("http://img.youtube.com/vi/#{episode.uid}/maxresdefault.jpg")%>
+							<%end%>
+						<% end%>
+					</div>
+				</div>
+			</div>
+		
 			<div class="pagination-centered">
   				<%= will_paginate @episodes, renderer: FoundationPagination::Rails %> 
   			</div>
