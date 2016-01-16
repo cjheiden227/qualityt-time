@@ -1,5 +1,27 @@
 @import "vars";
 
+header{
+	position: relative;
+
+	&:after{
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		content: '';
+	}
+
+}
+
+header.alt:after{
+	border-bottom: 1px solid white;
+}
+
+header.std:after{
+	border-bottom: 1px solid $jet;
+}
+
 .breadcrumbs > * a{
 	&:hover{
 		color: darken($primary-color, 20%);

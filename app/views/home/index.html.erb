@@ -2,7 +2,7 @@
 <div class="margin-top full-width dark">
 	<div class="row">
 		<div class="text-shadow margin-top small-12 medium-8 columns">
-			<header class="home">
+			<header class="alt">
 				<h1>A Show About Time Travel</h1>
 			</header>
 		</div>
@@ -27,18 +27,34 @@
 </div>
 
 <div class="row">
-	<div class="small-12 columns">
-		<h2>Latest Blog Posts</h2>
+	<div class="small-centered small-12 medium-8 columns">
+		<header class="std">
+			<h2>Latest Blog Posts</h2>
+		</header>
+		<article class="row" data-equalizer>
+			<% @latest_posts.each do |post| %>
+				<div class="small-12 medium-6 columns" data-equalizer-watch>
+					<a href="/blog/<%=post.url%>">
+					<div class="home-post">
+						<h3><%= post.title %></h3>
+	    				<%= truncate_html(post.content, length: 75, omission: '...') %>
+					</div>
+					</a>
+				</div>
+			<%end%>
+		</article>
 	</div>
 
 </div>
  <div class="row">
- 	<div class="small-12 columns">
- 		<h2>Spend Some Quality Time with Quality Time</h2>
- 		<ul class="small-block-grid-3">
-			<li>facebook</li>
-			<li>twitter</li>
-			<li>youtube</li>
+	<div class="small-centered small-12 medium-8 columns">
+ 		<header class="std">
+ 			<h2>Quality Time Networks</h2>
+ 		</header>
+ 		<ul class="text-center small-block-grid-3">
+			<li><a href=""><%=image_tag('facebook.png', width: 75)%></a></li>
+			<li><a href=""><%=image_tag('twitter-bird.png', width: 75)%></a></li>
+			<li><a href=""><%=image_tag('you-tube.png', width: 75)%></a></li>
 		</ul>
  	</div>
  </div>
