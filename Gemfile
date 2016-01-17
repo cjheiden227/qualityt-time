@@ -21,7 +21,7 @@ gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.0'
 gem 'monologue', github: 'jipiboily/monologue'
-gem 'carrierwave'
+gem "monologue_image_upload", github: "msevestre/monologue_image_upload"
 gem 'foundation-rails'
 gem "jquery-slick-rails"
 gem 'yt', '~> 0.25.5'

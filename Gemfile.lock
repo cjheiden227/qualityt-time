@@ -14,6 +14,16 @@ GIT
       select2-rails (~> 3.2)
       truncate_html
 
+GIT
+  remote: git://github.com/msevestre/monologue_image_upload.git
+  revision: c3168b55ec4d71463b940e41279c4ce600bda7b3
+  specs:
+    monologue_image_upload (0.4.1)
+      jquery-rails
+      monologue
+      paperclip (~> 4.2.1)
+      rails (>= 4.0.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -58,11 +68,6 @@ GEM
       debug_inspector (>= 0.0.1)
     builder (3.2.2)
     byebug (8.2.1)
-    carrierwave (0.10.0)
-      activemodel (>= 3.2.0)
-      activesupport (>= 3.2.0)
-      json (>= 1.7)
-      mime-types (>= 1.16)
     ckeditor (4.1.5)
       cocaine
       orm_adapter (~> 0.5.0)
@@ -108,6 +113,11 @@ GEM
     nokogiri (1.6.7.1)
       mini_portile2 (~> 2.0.0.rc2)
     orm_adapter (0.5.0)
+    paperclip (4.2.4)
+      activemodel (>= 3.2.0)
+      activesupport (>= 3.2.0)
+      cocaine (~> 0.5.5)
+      mime-types
     pg (0.18.4)
     rack (1.6.4)
     rack-test (0.6.3)
@@ -191,13 +201,13 @@ PLATFORMS
 
 DEPENDENCIES
   byebug
-  carrierwave
   coffee-rails (~> 4.1.0)
   foundation-rails
   jbuilder (~> 2.0)
   jquery-rails
   jquery-slick-rails
   monologue!
+  monologue_image_upload!
   pg
   rails (= 4.2.1)
   sass-rails (~> 5.0)

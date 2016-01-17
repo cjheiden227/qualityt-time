@@ -1,0 +1,23 @@
+<div class="row">
+	<div class="posts small-centered small-12 medium-8 columns">
+		<header class="std">
+			<h2>Latest Blog Posts</h2>
+		</header>
+		<% @latest_posts.in_groups_of(2, false) do |posts| %>
+			<article class="row" data-equalizer>
+				<%posts.each do |post| %>
+				<div class="small-12 medium-6 columns" data-equalizer-watch>
+					<a href="/blog/<%=post.url%>">
+					<div class="home-post">
+						<header class="std">
+							<h3><%= post.title %></h3>
+						</header>
+	    				<p>By <%= Monologue::User.find_by(id: post.user_id).name%></p>
+					</div>
+					</a>
+				</div>
+				<%end%>
+			</article>
+		<%end%>
+	</div>
+</div>

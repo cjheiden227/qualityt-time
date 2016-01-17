@@ -33,77 +33,26 @@
   </head>
 
   <body>
-    <nav class="show-for-small-only">
-      <nav class="top-bar" data-topbar role="navigation">
-        <ul class="title-area">
-          <li class="name">
-            
-          </li>
-          <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
-        </ul>
+    <script>
+    window.fbAsyncInit = function() {
+      FB.init({
+        appId      : '1662787157311346',
+        xfbml      : true,
+        version    : 'v2.5'
+      });
+    };
 
-        <section class="top-bar-section">
-          <ul class="text-center mobile-nav right">
-            <li>
-              <%=link_to main_app.root_path do %>
-                <%=image_tag "home.svg", width: 50 %>
-                 <label>Home</label>
-              <%end%>
-            </li>
-            <li>
-              <%=link_to main_app.episodes_path do %>
-                <%=image_tag "camera.svg", width: 50 %>
-                <label>Episodes</label>
-              <%end%>
-            </li>
-            <li>
-              <%=link_to main_app.monologue_path do %>
-                <%=image_tag "typewriter.svg", width: 50 %>
-                <label>Blog</label>
-              <%end%>
-            </li>
-            <li>
-              <%=link_to main_app.castcrew_path do %>
-                <%=image_tag "about.svg", width: 50 %>
-                <label>Cast & Crew</label>
-              <%end%>
-            </li>            
-          </ul>
-        </section>
-      </nav>
-    </nav>
-    <div class="row">
-      <div class="text-center small-12 columns">
-        <div class="logo">
-          <h1><%=image_tag('logo.svg', width: 250)%></h1>
-        </div>
-      </div>
-    </div>
-      <nav class="show-for-medium-up icon-bar-nav"> 
-        <div class="row">
-          <div class=" small-12 columns">
-            <div class="icon-bar four-up">
-              <%=link_to main_app.root_path, class: "item" do %>
-                <%=image_tag "home.svg"%>
-                <label>Home</label>
-              <%end%>
-              <%=link_to main_app.episodes_path, class: "item" do %>
-                <%=image_tag "camera.svg"%>
-                <label>Episodes</label>
-              <%end%>
-              <%=link_to main_app.monologue_path, class: "item" do %>
-                <%=image_tag "typewriter.svg"%>
-                <label>Blog</label>
-              <%end%>
-              <%=link_to main_app.castcrew_path, class: "item" do %>
-                <%=image_tag "about.svg"%>
-                <label>Cast & Crew</label>
-              <%end%>
-            </div>
-          </div>
-        </div>
-      </nav>
+    (function(d, s, id){
+       var js, fjs = d.getElementsByTagName(s)[0];
+       if (d.getElementById(id)) {return;}
+       js = d.createElement(s); js.id = id;
+       js.src = "//connect.facebook.net/en_US/sdk.js";
+       fjs.parentNode.insertBefore(js, fjs);
+     }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <%=render "/layouts/partials/nav" %>
 
       <%= yield %>
+    <%=render "/layouts/partials/footer" %>
   </body>
 </html>

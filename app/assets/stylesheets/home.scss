@@ -23,10 +23,11 @@
 article.row{
 	margin-top: 1.5rem !important;
 } 
+
 .home-post{
 	height: 100%;
 	
-	background-image: linear-gradient(to right, rgba(144,148,80,0.5) 0%, rgba(144,148,80,0.5) 100%), image-url('q.svg');
+	background-image: linear-gradient(to right, rgba(144,148,80,0.35) 0%, rgba(144,148,80,0.35) 100%), image-url('q.svg');
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: contain;
@@ -40,4 +41,8 @@ article.row{
 	p, a{
 		color: $jet !important;
 	}
+}
+
+.posts{
+	min-height: 400px;
 }

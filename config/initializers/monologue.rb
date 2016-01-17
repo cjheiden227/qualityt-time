@@ -1,10 +1,10 @@
 Monologue.config do |config|
-  config.site_name = "My blog"
-  config.site_subtitle = "my own place online"
-  config.site_url = "http://example.com"
+  config.site_name = "Quality Time"
+  config.site_subtitle = "A Show About Time Travel"
+  config.site_url = "http://quality-time.com"
 
   config.meta_description = "This is my blog about..."
-  config.meta_keyword = "music, fun"
+  config.meta_keyword = "web series, time travel, comedy, sitcom"
 
   config.admin_force_ssl = false
   config.posts_per_page = 10
@@ -27,12 +27,10 @@ Monologue.config do |config|
 
 
   #SOCIAL
-  config.twitter_username = "myhandle"
-  config.facebook_url = "https://www.facebook.com/myhandle"
+  config.twitter_username = "CJ_Cornetto"
+  config.facebook_url = "https://www.facebook.com/christopher.heiden"
   config.facebook_logo = 'logo.png'
   config.google_plus_account_url = "https://plus.google.com/u/1/.../posts"
-  config.linkedin_url = "http://www.linkedin.com/in/myhandle"
-  config.github_username = "myhandle"
-  config.show_rss_icon = true
+  config.show_rss_icon = false
 
 end

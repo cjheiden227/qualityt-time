@@ -1,0 +1,39 @@
+<nav class="show-for-small-only">
+    <nav class="top-bar" data-topbar role="navigation">
+      <ul class="title-area">
+        <li class="name">
+          
+        </li>
+        <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+      </ul>
+
+      <section class="top-bar-section">
+        <ul class="text-center mobile-nav right">
+          <li>
+            <%=link_to main_app.root_path do %>
+              <%=image_tag "home.svg", width: 50 %>
+               <label>Home</label>
+            <%end%>
+          </li>
+          <li>
+            <%=link_to main_app.episodes_path do %>
+              <%=image_tag "camera.svg", width: 50 %>
+              <label>Episodes</label>
+            <%end%>
+          </li>
+          <li>
+            <%=link_to main_app.monologue_path do %>
+              <%=image_tag "typewriter.svg", width: 50 %>
+              <label>Blog</label>
+            <%end%>
+          </li>
+          <li>
+            <%=link_to main_app.castcrew_path do %>
+              <%=image_tag "about.svg", width: 50 %>
+              <label>Cast & Crew</label>
+            <%end%>
+          </li>            
+        </ul>
+      </section>
+    </nav>
+</nav>
