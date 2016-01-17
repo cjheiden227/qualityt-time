@@ -20,9 +20,12 @@
 	border: 10px solid lighten($taupe, 10%);
 }
 
+article.row{
+	margin-top: 1.5rem !important;
+} 
 .home-post{
 	height: 100%;
-	margin-top: 1.5rem;
+	
 	background-image: linear-gradient(to right, rgba(144,148,80,0.5) 0%, rgba(144,148,80,0.5) 100%), image-url('q.svg');
 	background-position: center center;
 	background-repeat: no-repeat;

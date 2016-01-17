@@ -31,8 +31,9 @@
 		<header class="std">
 			<h2>Latest Blog Posts</h2>
 		</header>
-		<article class="row" data-equalizer>
-			<% @latest_posts.each do |post| %>
+		<% @latest_posts.in_groups(2) do |posts| %>
+			<article class="row" data-equalizer>
+				<%posts.each do |post| %>
 				<div class="small-12 medium-6 columns" data-equalizer-watch>
 					<a href="/blog/<%=post.url%>">
 					<div class="home-post">
@@ -41,8 +42,9 @@
 					</div>
 					</a>
 				</div>
-			<%end%>
-		</article>
+				<%end%>
+			</article>
+		<%end%>
 	</div>
 
 </div>
