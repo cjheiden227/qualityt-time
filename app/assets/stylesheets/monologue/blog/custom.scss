@@ -1,4 +1,13 @@
+@import "vars";
+
+.post-wrap{
+	margin-top: 2rem;
+	padding: 2rem 0;
+	background-color: $white-smoke;
+	box-shadow: 1px 1px 3px $jet;
+}
 
 .posted{
+	margin-bottom: 2rem;
 
 }
