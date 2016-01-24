@@ -1,10 +1,16 @@
-<div class="row">	
-	<div class="small-12 columns">
-		<ul>
-			<li>Home</li>
-			<li>Episodes</li>
-			<li>Blog</li>
-			<li>Cast & Crew</li>
-		</ul>
+<div class="text-shadow small-12 columns">
+	<div class="row small-collapse">
+		<div class="small-8 small-centered columns">
+			<ul class="footer_nav">
+				<li><%=image_tag('q.svg')%></li>
+				<li><%=link_to "Home", main_app.root_path %></li>
+				<li class="divider">/</li>
+				<li><%=link_to "Episodes", main_app.episodes_path %></li>
+				<li class="divider">/</li>
+				<li><%=link_to "Blog", main_app.monologue_path %></li>
+				<li class="divider">/</li>
+				<li><%=link_to "Cast & Crew", main_app.castcrew_path %></li>
+			</ul>
+		</div>
 	</div>
 </div>

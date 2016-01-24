@@ -29,16 +29,11 @@ header.std:after{
 	border-bottom: 1px solid $jet;
 }
 
-.vertical-parent{
-	position: relative;
+.flex-parent{
+	display: flex;
+	flex-direction: column;
+ 	justify-content: center;
 }
-
-.vertical-center{
-	position: absolute;
-  	top: 50%;
-  	transform: translateY(-50%);
-}
-
 
 
 .breadcrumbs > * a{
@@ -116,22 +111,103 @@ nav a{
 }
 
 footer{
+	margin-top: 2rem;
+	padding: 2rem 0;
 	box-shadow: 0px -1px 2px 1px $jet;
-	min-height:400px ;
-	height: 50vh;
+	min-height:auto;
+	@media #{$small-only}{
+		height: auto;
+	}
 	background-color: $olive;
+	background-image: image-url('clock.svg');
+	background-size: 100% 150%;
+	background-repeat: no-repeat;
+	color: white;
 
-}
+	.margin-top{
+		@media #{$small-only}{
+			margin: 1rem auto;
+		}
+	}
 
-#twitter{
+	.footer_nav{
+		list-style-type: none;
+		margin: 0 auto;
+		@media #{$small-only}{
+			margin: 1rem auto;
+		}
 
-	fill: #ffffff;
-	stroke: #ffffff;
-	transition: 200ms all ease-in-out;
-}
+		li{
+			display: inline-block;
+			margin: 1rem 1rem;
 
-svg:hover #twitter{
-	fill: $primary-color;
-	stroke: $primary-color;
+			@media #{$small-only}{
+				display: block;
+				margin: 0;
+				text-align: center;
+			}
+
+			&.divider{
+				@media #{$small-only}{
+					display: none;
+			
+				}
+			}
+		}
+
+		li>a{
+
+			color: white;
+			transition: 200ms all ease-in-out;
+			&:hover{
+				color: $primary-color;
+				text-decoration: underline;
+			}
+		}
+	}
 	
+	.footer_social{
+		margin: 0 auto;
+	}
+	.footer_social li{
+
+		&:first-child{
+			text-align: right;
+		}
+
+		&:last-child{
+			text-align: left;
+		}
+		
+		a.social_link{
+			display: inline-block;
+			height: 50px;
+			width: 50px;
+			transition: 200ms all ease-in-out;
+		
+			&#fb{
+				background-image: image-url('facebook.svg');
+				transition: 200ms all ease-in-out;
+				&:hover{
+					background-image: image-url('facebook-alt.svg');
+				}
+			}
+			&#twitter{
+				background-image: image-url('twitter-bird.svg');
+				transition: 200ms all ease-in-out;
+				&:hover{
+					background-image: image-url('twitter-bird-alt.svg');
+				}
+			}
+			&#youtube{
+				background-image: image-url('you-tube.svg');
+				&:hover{
+					background-image: image-url('you-tube-alt.svg');
+				}
+			}
+			
+		}
+	
+	}
 }
+
