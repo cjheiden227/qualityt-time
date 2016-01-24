@@ -3,13 +3,17 @@
 			<header class="std">   
 				<h1>Episodes</h1>
 			</header>			
-  			<div class=" row">
+  			<div class="episodes row">
 				<div class="margin-top small-12 columns">
-					<div class="small-uncollapse medium-collapse row">
+					<div class=" small-uncollapse medium-collapse row">
 						<%@episodes.each do |episode| %>
-							<%=link_to episode, class: "text-center small-12 medium-4 columns frame" do %>
+							<%=link_to episode, class: "episode text-center small-12 medium-4 columns frame" do %>
 								<%=image_tag("http://img.youtube.com/vi/#{episode.uid}/maxresdefault.jpg")%>
+								<div class="text-shadow title">
+									<span><%=episode.title%></span>
+								</div>
 							<%end%>
+						
 						<% end%>
 					</div>
 				</div>
