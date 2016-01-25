@@ -3,12 +3,12 @@ class Episode < ActiveRecord::Base
   	self.per_page = 12
   	validates :link, presence: true, format: YT_LINK_FORMAT
 	def self.get_episodes
-		channel = Yt::Channel.new id:  'UCNMLkG2FIrhZIVMo70a4TIQ'
+		channel = Yt::Channel.new id:  'UCKfAhPzKZn656FH0mIB29FQ'
 		channel.episodes
 	end
 
 	def self.episodes_task
-		channel = Yt::Channel.new id:  'UCcKLnvxLUKMjcjAfs0erpFA'
+		channel = Yt::Channel.new id:  'UCKfAhPzKZn656FH0mIB29FQ'
 		episodes = channel.videos
 		episodes.each do |episode|
 			if !Episode.exists?(uid: episode.id)	
