@@ -185,11 +185,11 @@ footer{
 			width: 50px;
 			transition: 200ms all ease-in-out;
 		
-			&#fb{
-				background-image: image-url('facebook.svg');
+			&#insta{
+				background-image: image-url('insta.svg');
 				transition: 200ms all ease-in-out;
 				&:hover{
-					background-image: image-url('facebook-alt.svg');
+					background-image: image-url('insta-alt.svg');
 				}
 			}
 			&#twitter{
