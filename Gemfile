@@ -12,6 +12,7 @@ gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.1.0'
 gem 'puma'
+gem 'carrierwave'
 
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
@@ -24,7 +25,7 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'monologue', github: 'jipiboily/monologue'
 gem "monologue_image_upload", github: "msevestre/monologue_image_upload"
-gem 'foundation-rails'
+gem 'foundation-rails', '~> 5.5.3.2'
 gem "jquery-slick-rails"
 gem 'yt', '~> 0.25.5'
 gem 'will_paginate-foundation'

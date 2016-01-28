@@ -1,3 +1,11 @@
-
-<%=render "/layouts/partials/mobile" %>
-<%=render "/layouts/partials/desk" %>
+<div class="nav-head">
+	<div class="row">
+	  <div class="text-center small-12 columns">
+	    <div class="logo">
+	      <h1><%=image_tag('logo.svg', width: 250)%></h1>
+	    </div>
+	  </div>
+	</div>
+	<%=render "/layouts/partials/mobile" %>
+	<%=render "/layouts/partials/desk" %>
+</div>

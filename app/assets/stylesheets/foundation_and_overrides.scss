@@ -1404,7 +1404,7 @@ $tabbar-menu-icon-color: $jet;
 // $include-html-top-bar-classes: $include-html-classes;
 
 // Background color for the top bar
-$topbar-bg-color: rgba($primary-color, 0.90);
+$topbar-bg-color: transparent;
 $topbar-bg: $topbar-bg-color;
 
 // Height and margin
@@ -1423,7 +1423,7 @@ $topbar-link-color-active: $jet;
 // $topbar-link-weight: $font-weight-normal;
 // $topbar-link-font-size: rem-calc(13);
 // $topbar-link-hover-lightness: -10%; // Darken by 10%
-$topbar-link-bg: rgba($primary-color, 0.75);
+$topbar-link-bg: transparent;
 $topbar-link-bg-hover: darken(rgba(255,255,255, 0.5), 50%);
 // $topbar-link-bg-color-hover: $charcoal;
 $topbar-link-bg-active: $primary-color;
@@ -1437,7 +1437,7 @@ $topbar-link-bg-active: $primary-color;
 // $topbar-button-top: 7px;
 
 // Style the top bar dropdown elements
- $topbar-dropdown-bg: $primary-color;
+ $topbar-dropdown-bg: transparent;
 // $topbar-dropdown-link-color: $white;
 // $topbar-dropdown-link-color-hover: $topbar-link-color-hover;
 // $topbar-dropdown-link-bg: $oil;

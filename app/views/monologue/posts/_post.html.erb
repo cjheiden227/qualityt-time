@@ -1,18 +1,22 @@
 <section class="margin-top row" data-tags="<%= post.tags.map(&:name).join(' ') %>">
-	<div class="post-wrap">
-		<div class="small-centered small-12 medium-8 columns">
+	<div class="small-centered small-12 medium-10 columns">
+		<div class="post-wrap">
+		<div class="row">
+		<div class="small-12 columns">
 			<%= render partial: 'monologue/posts/post_header', locals: {post: post} %>
 		</div>
 
-		<div class="small-centered small-12 medium-8 columns content" data-monologue="content">
+		<div class="small-12 columns content" data-monologue="content">
 			<%= truncate_html(post.content, length: Monologue::Config.preview_size, omission: '...') %>
 		</div>
 
 		<div class="tags" data-monologue="tags">
 			<%= render post.tags %>
 		</div>
-		<div class="small-centered small-12 medium-8 columns">
+		<div class="small-12 columns">
 			 <%= link_to t(".readmore"), post.full_url, class: "button" %>
+		</div>
+		</div>
 		</div>
 	</div>
 </section>

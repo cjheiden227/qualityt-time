@@ -73,13 +73,16 @@ header.std:after{
 }
 
 .top-bar, .icon-bar-nav{
-	box-shadow: 1px 1px 2px 1px #222;
+	box-shadow: 0px 3px 2px rgba($jet, .5);
+}
+.top-bar{
+	margin-bottom: 2rem;
 }
 
 .icon-bar-nav{
 	height: rem-calc(95);
 	width: 100%;
-	background-color: rgba($primary-color, 0.90);
+
 	margin: 40px 0;
 	
 }
@@ -90,6 +93,12 @@ header.std:after{
 
 nav a{
 	transition: 200ms all ease-in-out;
+}
+
+.nav-head{
+	background-image: image-url('clock-head.svg'), linear-gradient(to right, rgba(194,199,108,1) 0%, rgba(194,199,108,0.8) 25%, rgba(194,199,108,0.8) 30%, rgba(207,208,176,0.81) 50%, rgba(194,199,108,0.8) 70%, rgba(194,199,108,0.8) 75%, rgba(194,199,108,1) 100%);
+	background-size: cover;
+	// background-color: rgba($primary-color, 1);
 }
 
 .mobile-nav>li{
@@ -118,7 +127,7 @@ footer{
 	@media #{$small-only}{
 		height: auto;
 	}
-	background-color: $olive;
+	background-color: $slate;
 	background-image: image-url('clock.svg');
 	background-size: 100% 150%;
 	background-repeat: no-repeat;

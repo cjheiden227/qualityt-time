@@ -27,7 +27,7 @@ article.row{
 .home-post{
 	height: 100%;
 	
-	background-image: linear-gradient(to right, rgba(144,148,80,0.35) 0%, rgba(144,148,80,0.35) 100%), image-url('q.svg');
+	background-image: linear-gradient(to right, rgba($primary-color, 0.75) 0%, rgba($primary-color, 0.75)), image-url('q.svg');
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: contain;
@@ -36,7 +36,7 @@ article.row{
 	box-shadow: 1px 1px 3px $jet;
 	&:hover{
 		transform: scale(1.05);
-		background-image: linear-gradient(to right, rgba(144,148,80,0.75) 0%, rgba(144,148,80,0.75) 100%), image-url('q.svg');
+		background-image: linear-gradient(to right, rgba($primary-color, .9) 0%, rgba($primary-color, .9) 100%), image-url('q.svg');
 	}
 	p, a{
 		color: $jet !important;
