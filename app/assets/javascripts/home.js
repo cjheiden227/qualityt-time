@@ -3,13 +3,16 @@ var ready = function(){
 	  slidesToShow: 1,
 	  slidesToScroll: 1,
 	  autoplay: true,
-	  speed: 500,
+	  speed: 1000,
 	  autoplaySpeed: 4000,
 	  fade: true,
-	  dots: false,
-	  arrows: false
+	  dots: true,
+	  arrows: true
 	});
 };
 
 $(document).ready(ready);
 $(document).on('page:load', ready);
+$(document).on('page:load', function(){
+	$(this).foundation('equalizer', 'reflow');
+});
