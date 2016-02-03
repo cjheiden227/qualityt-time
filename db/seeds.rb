@@ -5,3 +5,5 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+Monologue::User.create(name:"Chris", email: "cjheiden227@gmail.com", password:"swes3ub5", password_confirmation:"swes3ub5")
+Episode.episodes_task
