@@ -10,8 +10,10 @@
 			<%= truncate_html(post.content, length: Monologue::Config.preview_size, omission: '...') %>
 		</div>
 
-		<div class="tags" data-monologue="tags">
+		<div class="small-12 columns tags" data-monologue="tags">
+			<header class="std">
 			<%= render post.tags %>
+			</header>
 		</div>
 		<div class="small-12 columns">
 			 <%= link_to t(".readmore"), post.full_url, class: "button" %>
