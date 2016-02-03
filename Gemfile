@@ -30,6 +30,8 @@ gem "jquery-slick-rails"
 gem 'yt', '~> 0.25.5'
 gem 'will_paginate-foundation'
 gem "autoprefixer-rails"
+
+gem 'tzinfo-data', platforms: [:mingw, :mswin]
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
 
