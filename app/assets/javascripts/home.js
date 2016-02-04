@@ -7,12 +7,9 @@ var ready = function(){
 	  autoplaySpeed: 4000,
 	  fade: true,
 	  dots: true,
-	  arrows: true
+	  arrows: false
 	});
 };
 
 $(document).ready(ready);
 $(document).on('page:load', ready);
-$(document).on('page:load', function(){
-	$(this).foundation('equalizer', 'reflow');
-});
