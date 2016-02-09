@@ -15,7 +15,9 @@
     </div>
 
   	<div class="tags" data-monologue="tags">
-      <%= render @post.tags %>
+      <header class="std">      
+        <p>Tagged in:  <%= render @post.tags %></p>
+      </header>
     </div>
 
     <%= render "monologue/posts/social_sharing" %>
