@@ -7,8 +7,9 @@
 <% end %>
 
 <article class="row">
-  <div class="post-wrap">
   <div class="small-centered small-12 medium-10 columns">
+  <div class="post-wrap">
+  <div class="small-centered small-12 columns">
     <%= render partial: 'monologue/posts/post_header', locals: {post: @post }%>
     <div class="content" data-monologue="content">
       <%= raw @post.content %>
@@ -45,6 +46,7 @@
     </script>
     <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
    
+  </div>
   </div>
   </div>
 </article>
