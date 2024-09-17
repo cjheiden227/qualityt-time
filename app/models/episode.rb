@@ -10,9 +10,14 @@ class Episode < ActiveRecord::Base
 	def self.episodes_task
 		channel = Yt::Channel.new id:  'UCKfAhPzKZn656FH0mIB29FQ'
 		episodes = channel.videos
+		dbase_eps = Episodes.all
+		dbase_eps.each do |episode|
+			if episodes.where(id: episode.uid).nil?
+				Episodes.destroy(episode.id)	
+			end
+		end
 		episodes.each do |episode|
 			if !Episode.exists?(uid: episode.id)	
-
 				Episode.create(
 					uid: episode.id, 
 					title: episode.title, 
